@@ -18,16 +18,12 @@
   <h3>you can share and exchange your opinions , inpressions , and emotions</h3>
   <h3>about various books!</h3>
   <body>
-    <a class="nav-item">
-    <%= link_to new_user_session_path, class: 'nav-link text-dark' do%>
-    <button class="btn btn-info btn-sm btn-block mb-3 sign_in" >Log in</button>
-    <%end%>
-   </li>
-   <a class="nav-item">
-    <%= link_to new_user_registration_path, class: 'nav-link text-dark' do%>
-    <button class="btn btn-success btn-sm btn-block sign_up" >Sign up</button>
-    <%end%>
-   </li>
+    <div class="row">
+            <%= link_to 'Log in',new_user_session_path, class: 'btn btn-info btn-sm btn-block mb-3' %>
+        </div>
+        <div class="row">
+          <%= link_to 'Sign up',new_user_registration_path, class: 'btn btn-success btn-sm btn-block' %>
+        </div>
    </div>
    </div>
    </div>
